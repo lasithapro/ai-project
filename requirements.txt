@@ -1,0 +1,17 @@
+# Core libraries
+torch>=2.1.0          # Core deep learning framework
+transformers>=4.34.0  # Hugging Face Transformers
+peft>=0.6.0           # Parameter-Efficient Fine-Tuning / LoRA
+accelerate>=0.23.0    # Device mapping & mixed precision helpers
+
+# Quantization (optional in CPU-only envs; script falls back automatically)
+bitsandbytes>=0.41.0  # 4-bit (QLoRA) + 8-bit quantization
+triton                # Kernel generation (used by bitsandbytes on GPU)
+
+# Tokenization & model utilities
+tokenizers            # Fast tokenizers backend
+sentencepiece         # Needed for some multilingual / T5-like models
+scipy                 # Required transitively by bitsandbytes research modules
+huggingface_hub>=0.16.4
+
+# (Optional) add: datasets, evaluate, accelerate[torchvision] if you extend training.

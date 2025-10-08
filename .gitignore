@@ -1,0 +1,81 @@
+# ------------------------------
+# Python bytecode / build
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+
+# Environment & secrets
+.env
+.env.*
+*.env
+
+# Caches & tooling
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+pip-wheel-metadata/
+
+# Logs & outputs
+logs/
+*.log
+runs/
+outputs/
+
+# Model weights / large artifacts (keep adapters separately if needed)
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+*.onnx
+
+# Hugging Face / datasets local storage (comment out if you want them versioned)
+.huggingface/
+datasets/
+data/
+downloaded_models/
+
+# TensorBoard / training traces
+events.out.tfevents*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage / testing
+htmlcov/
+.coverage*
+coverage.xml
+pytestdebug.log
+
+# Misc
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Allowlist (negate) examples if later needed:
+# !models/KEEP_THIS_SMALL_FILE.txt
+
+venv
